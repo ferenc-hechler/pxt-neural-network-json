@@ -1,0 +1,35 @@
+{
+    "name": "ainn",
+    "dependencies": {
+        "core": "*",
+        "radio": "*"
+    },
+    "description": "",
+    "files": [
+        "shims.d.ts",
+        "neuralnetwork.ts",
+        "neuralnetwork.cpp",
+        "json/JsonParserIF.h",
+        "json/NNJsonParser.h",
+        "json/NNJsonParser.cpp",
+        "json/Parser.h",
+        "json/Parser.cpp",
+        "json/Token.h",
+        "json/Token.cpp",
+        "neuralnets/Mat.h",
+        "neuralnets/Mat.cpp",
+        "neuralnets/NN.h",
+        "neuralnets/NN.cpp",
+        "neuralnets/NNLayer.h",
+        "neuralnets/NNLayer.cpp",
+        "neuralnets/NNUtils.h",
+        "neuralnets/NNUtils.cpp",
+        "neuralnets/Vect.h",
+        "neuralnets/Vect.cpp",
+        "platform/Utils.h",
+        "platform/Utils.cpp",
+        "README.md"
+    ],
+    "public": false,
+    "preferredEditor": "blocksprj"
+}
