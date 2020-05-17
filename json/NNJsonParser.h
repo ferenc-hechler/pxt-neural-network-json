@@ -8,7 +8,7 @@
 #ifndef NNJSONPARSER_H_
 #define NNJSONPARSER_H_
 
-#include "json/JsonParserIF.h"
+#include "JsonParserIF.h"
 
 class NN;
 class Vect;

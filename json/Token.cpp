@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include<string.h>
 
-#include "json/Token.h"
-#include "platform/Utils.h"
+#include "Token.h"
+#include "../platform/Utils.h"
 
 
 Token::Token(TokenType type, const char *value, int valueLen) {

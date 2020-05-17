@@ -1,8 +1,8 @@
 #ifndef NNUTILS_H
 #define NNUTILS_H
 
-#include "neuralnets/Vect.h"
-#include "neuralnets/Mat.h"
+#include "Vect.h"
+#include "Mat.h"
 
 #include <stdlib.h>
 #include <time.h>

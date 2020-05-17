@@ -1,7 +1,7 @@
-#include "json/Parser.h"
-#include "json/Token.h"
-#include "platform/Utils.h"
-#include "json/JsonParserIF.h"
+#include "Parser.h"
+#include "Token.h"
+#include "../platform/Utils.h"
+#include "JsonParserIF.h"
 
 Parser::Parser(JsonParserIF *jsonParser) {
 	this->buflen = 0;

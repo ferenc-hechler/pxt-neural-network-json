@@ -8,7 +8,7 @@
 #ifndef VECTJSONPARSER_H_
 #define VECTJSONPARSER_H_
 
-#include "json/JsonParserIF.h"
+#include "JsonParserIF.h"
 
 class Vect;
 

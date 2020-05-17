@@ -5,17 +5,17 @@
  *      Author: A307131
  */
 
-#include "json/NNJsonParser.h"
-#include "platform/Utils.h"
+#include "NNJsonParser.h"
+#include "../platform/Utils.h"
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-#include "neuralnets/NN.h"
-#include "neuralnets/NNLayer.h"
-#include "neuralnets/Vect.h"
-#include "neuralnets/Mat.h"
+#include "../neuralnets/NN.h"
+#include "../neuralnets/NNLayer.h"
+#include "../neuralnets/Vect.h"
+#include "../neuralnets/Mat.h"
 
 
 

@@ -1,6 +1,6 @@
-#include "neuralnets/Mat.h"
-#include "neuralnets/Vect.h"
-#include "platform/Utils.h"
+#include "Mat.h"
+#include "Vect.h"
+#include "../platform/Utils.h"
 #include <stdio.h>
 
 

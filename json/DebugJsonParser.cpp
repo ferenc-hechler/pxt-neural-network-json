@@ -5,8 +5,8 @@
  *      Author: A307131
  */
 
-#include "json/DebugJsonParser.h"
-#include "platform/Utils.h"
+#include "DebugJsonParser.h"
+#include "../platform/Utils.h"
 #include <stdio.h>
 
 

@@ -1,7 +1,7 @@
 #include "MicroBit.h"
-#include "platform/Utils.h"
-#include "neuralnets/Mat.h"
-#include "neuralnets/Vect.h"
+#include "../platform/Utils.h"
+#include "../neuralnets/Mat.h"
+#include "../neuralnets/Vect.h"
 
 //#include<stdio.h>
 #include<stdarg.h>

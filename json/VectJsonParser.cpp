@@ -5,10 +5,10 @@
  *      Author: A307131
  */
 
-#include "json/VectJsonParser.h"
-#include "platform/Utils.h"
+#include "VectJsonParser.h"
+#include "../platform/Utils.h"
 
-#include "neuralnets/Vect.h"
+#include "../neuralnets/Vect.h"
 
 VectJsonParser::VectJsonParser() {
 	this->vect = new Vect(0);

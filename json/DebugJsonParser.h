@@ -8,7 +8,7 @@
 #ifndef DEBUGJSONPARSER_H_
 #define DEBUGJSONPARSER_H_
 
-#include "json/JsonParserIF.h"
+#include "JsonParserIF.h"
 
 class DebugJsonParser: public JsonParserIF {
 public:

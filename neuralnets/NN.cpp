@@ -1,8 +1,8 @@
-#include "neuralnets/Mat.h"
-#include "neuralnets/Vect.h"
-#include "neuralnets/NNLayer.h"
-#include "neuralnets/NN.h"
-#include "platform/Utils.h"
+#include "Mat.h"
+#include "Vect.h"
+#include "NNLayer.h"
+#include "NN.h"
+#include "../platform/Utils.h"
 #include <stdio.h>
 
 

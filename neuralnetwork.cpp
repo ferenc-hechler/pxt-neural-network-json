@@ -49,10 +49,10 @@ namespace nn {
 		NNJsonParser nnParser;
 		Parser parser(&nnParser);
 
-		parser.parse(nn_json);
+		parser.parse(jsonNN);
 		brain = (NN*) nnParser.getResult();
 
-		if (nn != 0) {
+		if (brain != 0) {
 			brain->print();
 		}
 	    uBit.serial.printf("FCNN successfully created\r\n");
