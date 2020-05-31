@@ -1,16 +1,14 @@
-#include "MicroBit.h"
-#include "../platform/Utils.h"
-#include "../neuralnets/Mat.h"
-#include "../neuralnets/Vect.h"
+#include "pxt.h"
+
+#include "Utils.h"
 
 //#include<stdio.h>
 #include<stdarg.h>
 //#include<string.h>
-#include <math.h>
+//#include <math.h>
 //#include <float.h>
 //#include <iostream>
 
-extern MicroBit uBit;
 
 // from: https://github.com/espressif/arduino-esp32/blob/master/cores/esp32/Print.cpp
 size_t float2char(char* buf, float number, uint8_t digits) {
@@ -167,38 +165,9 @@ float char2float(const char* text) {
 }
 
 
-Vect createVect(int length, ...) {
-	va_list argp;
-	va_start(argp, length);
-	Vect result = Vect(length);
-	for (int i=0; i<length; i++) {
-		float f = va_arg(argp, double);
-		result.set(i, f);
-	}
-	va_end(argp);
-	return result;
-}
-
-Mat createMat(int rows, int cols, ...) {
-	va_list argp;
-	va_start(argp, cols);
-	Mat result = Mat(rows, cols);
-	for (int r=0; r<rows; r++) {
-		for (int c=0; c<cols; c++) {
-			float f = va_arg(argp, double);
-			result.set(r,c, f);
-		}
-	}
-	va_end(argp);
-	return result;
-}
-
-
 void throwError(const char *errMsg) {
-	log("\r\n\r\n");
-	log(errMsg);
-	log("\r\n");
 	while (true) {
+	    uBit.serial.send(errMsg);
 		uBit.display.scroll(errMsg);
         uBit.sleep(1000);
         if ( uBit.buttonA.isPressed() == true ) {
@@ -208,17 +177,18 @@ void throwError(const char *errMsg) {
 }
 
 void log(const char *msg) {
-	uBit.serial.send(msg);
+//	uBit.display.scroll(msg);
+    uBit.serial.send(msg);
 }
 
 void logFloat(float f) {
-	char buf[30];
+	char buf[100];
 	float2char(buf, f, 3);
 	log(buf);
 }
 
 void logInt(int i) {
-	char buf[30];
+	char buf[100];
 	sprintf(buf, "%d", i);
 	log(buf);
 }

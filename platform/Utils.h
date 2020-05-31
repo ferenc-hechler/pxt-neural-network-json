@@ -4,14 +4,8 @@
 #include <stdint.h>
 #include <stddef.h>
 
-class Vect;
-class Mat;
-
 size_t float2char(char* buf, float number, uint8_t digits);
 float char2float(const char* buf);
-
-Vect createVect(int length, ...);
-Mat createMat(int rows, int cols, ...);
 
 void throwError(const char *errMsg);
 
