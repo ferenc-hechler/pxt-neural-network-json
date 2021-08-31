@@ -93,6 +93,13 @@ fetching https://pxt.azureedge.net/compile/f60db3bb2519ae8c63ba832606daf5a8ced18
         1 Datei(en) kopiert.
 ```
 
+### build local
+
+see: https://forum.makecode.com/t/c-compilation/853/5
+
+```
+
+```
 
 
 ## Supported targets
